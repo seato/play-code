@@ -4,7 +4,7 @@
 
 int main()
 {
-  printf("Answer: %d\n",ex5());
+  printf("Answer: %d\n", ex3());
 
   return 0;
 }
@@ -73,7 +73,7 @@ int square_of_sum(int n)
   return pow(total, 2);
 }
 
-int ex3()
+int ex6()
 {
   return square_of_sum(101) - sum_of_squares(101);
 }
@@ -99,4 +99,39 @@ int ex5()
   }
 
   return -1;
+}
+
+int is_prime(int n)
+{
+  int i = 2;
+
+  for (i = 2; i < sqrt(n); i++)
+  {
+    if(0 == n % i)
+    {
+      return 0;
+    }
+  }
+
+  return 1;
+}
+
+int ex3()
+{
+  int i = 3;
+  double num = 600851475143;
+  int largest_prime = 0;
+
+  for(i = 3; i < sqrt(num); i += 2)
+  {
+    if(is_prime(i))
+    {
+      if(0 == fmod(num, i))
+      {
+        largest_prime = i;
+      }
+    }
+  }
+
+  return largest_prime;
 }
