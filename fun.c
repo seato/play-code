@@ -3,7 +3,7 @@
 
 int main()
 {
-  printf("Answer: %d\n",ex1());
+  printf("Answer: %d\n",ex2());
 
   return 0;
 }
@@ -19,6 +19,28 @@ int ex1()
     {
       total += i;
     }
+  }
+
+  return total;
+}
+
+int ex2()
+{
+  int i = 0;
+  int f0 = 1;
+  int f1 = 2;
+
+  int total = 0;
+
+  while(f1 < 4000000)
+  {
+    if (0 == f1 % 2)
+    {
+      total += f1;
+    }
+
+    f1 += f0;
+    f0 = f1 - f0;
   }
 
   return total;
