@@ -1,3 +1,5 @@
 # play code
 
-playing around with node.js
+fun.c + the makefile are for project euler,
+
+playing around with node.js atm (the .js files)
