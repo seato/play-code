@@ -1,3 +1,3 @@
 # play code
 
-REPL to test my utilities, I'll start off with some color!
+playin around with some euler, gotta shake off the mornin grog

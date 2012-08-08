@@ -1,10 +1,11 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 #include<math.h>
 
 int main()
 {
-  printf("Answer: %d\n", ex3());
+  printf("Answer: %d\n", ex4());
 
   return 0;
 }
@@ -134,4 +135,27 @@ int ex3()
   }
 
   return largest_prime;
+}
+
+int is_palindrome(char[] str, int length)
+{
+  char reversed[length];
+  strncpy(reversed, str, length);
+  strrev(reversed);
+  if(0 == strncmp(str, reversed))
+  {
+    printf("palindrome!");
+  }
+  else
+  {
+    printf("not a palindrome!");
+  }
+
+  return 0;
+}
+
+int ex4()
+{
+
+  return 0;
 }
